@@ -1,0 +1,39 @@
+# class sipna:
+#     a=10
+#     def demo (self):
+#         __b=20
+#         print(__b)
+
+# obj=sipna()
+# print(obj.a)
+# obj.demo()
+
+# -----------------------polymorphism----------------------------
+
+# class Sipna:
+#     def add(self, a, b):
+#         return a + b
+
+# class Sipna1:
+#     def add(self, a, b, c):
+#         return a + b + c
+
+# obj = Sipna()
+# obj1 = Sipna1()
+
+# print(obj.add(10, 20))
+# print(obj1.add(10, 20, 30))
+
+
+
+class inte:
+
+
+
+    def add(self,a,b,c):
+        return a+b+c
+    
+obj=inte()
+obj1=inte()
+print(obj.add(10,50,20))
+print(obj.add(a=52,b=10,c=60))
