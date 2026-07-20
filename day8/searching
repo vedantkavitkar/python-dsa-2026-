@@ -1,0 +1,120 @@
+# ---------------------- Linear Search ----------------------
+
+# def linearSearch(arr, key):
+#     for i in range(len(arr)):
+#         if arr[i] == key:
+#             return i
+#     return -1
+# size = int(input("Enter Size: "))
+# arr = []
+# for i in range(size):
+#     arr.append(int(input()))
+# key = int(input("Enter Element to Search: "))
+# result = linearSearch(arr, key)
+# if result == -1:
+#     print("Element Not Found")
+# else:
+#     print("Element Found at Index", result)
+
+# ---------------------- Binary Search ----------------------
+
+# def binarySearch(arr, key):
+
+#     low = 0
+#     high = len(arr) - 1
+
+#     while low <= high:
+
+#         mid = (low + high) // 2
+
+#         if arr[mid] == key:
+#             return mid
+
+#         elif key < arr[mid]:
+#             high = mid - 1
+
+#         else:
+#             low = mid + 1
+
+#     return -1
+
+
+# size = int(input("Enter Size: "))
+
+# arr = []
+
+# print("Enter Elements in Sorted Order")
+
+# for i in range(size):
+#     arr.append(int(input()))
+
+# key = int(input("Enter Element to Search: "))
+
+# result = binarySearch(arr, key)
+
+# if result == -1:
+#     print("Element Not Found")
+# else:
+#     print("Element Found at Index", result)
+
+
+
+# ---------------------- Linear Search ----------------------
+
+# def linearSearch(arr, key):
+
+#     for i in range(len(arr)):
+
+#         if arr[i] == key:
+#             return i
+
+#     return -1
+
+
+# ---------------------- Driver Code ----------------------
+
+# li = [8, 5, 1, 9, 75, 12, 15, 63, 20, 10, 17]
+
+# key = int(input("Enter a key to search: "))
+
+# result = linearSearch(li, key)
+
+# if result == -1:
+#     print("Key not found")
+# else:
+#     print("Key found at index:", result)
+
+
+
+    # ---------------------- Binary Search ----------------------
+
+def binarySearch(arr, low, high, key):
+
+    while low <= high:
+
+        mid = (low + high) // 2
+
+        if arr[mid] == key:
+            return mid
+
+        elif key < arr[mid]:
+            high = mid - 1
+
+        else:
+            low = mid + 1
+
+    return -1
+
+
+# ---------------------- Driver Code ----------------------
+
+li = [1, 5, 8, 10, 12, 15, 17, 20, 63, 75]
+
+key = int(input("Enter a key to search: "))
+
+result = binarySearch(li, 0, len(li)-1, key)
+
+if result == -1:
+    print("Key not found")
+else:
+    print("Key found at index:", result)

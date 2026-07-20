@@ -1,0 +1,14 @@
+import random as ed
+
+num=ed.randint(1,100)
+chances=10
+while chances>0:
+    choice=int(input("guess the number"))
+    if choice<num:
+        print(f'You guessed too Low !! you have only {chances}available')
+    elif choice>num:
+        print(f'you guessed too high !! you have only {chances}available ')
+    else:
+        print("Congrats !!!!!!! Brooooooooooo")
+        break
+    chances-=1
